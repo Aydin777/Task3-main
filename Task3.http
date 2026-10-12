@@ -1,0 +1,16 @@
+@Task3_HostAddress = http://localhost:5049
+
+GET {{Task3_HostAddress}}/api/books
+Accept: application/json
+
+###
+GET {{Task3_HostAddress}}/api/books/partial?page=1&pageSize=3
+
+###
+GET {{Task3_HostAddress}}/api/books/1/extend
+
+###
+GET {{Task3_HostAddress}}/api/books/1/extend
+Accept: text/vcard
+
+###
